@@ -14,12 +14,12 @@ router.post('/signup', (req, res) => {
   } catch (error) {
     if (error.message === "email_existent")
       return res.status(400).send(error.message)
-      
+
     res.status(500).send(error.message)
   }
-  
-  })
-  
+
+})
+
 router.post('/login', (req, res) => {
   try {
     const token = login(req.body)
@@ -29,9 +29,9 @@ router.post('/login', (req, res) => {
       return res.status(400).send(error.message)
 
     res.status(500).send()
-    }
-  
-    
-  })
+  }
+
+
+})
 
 export default router

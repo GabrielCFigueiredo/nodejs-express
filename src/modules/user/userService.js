@@ -9,9 +9,9 @@ const getUserByEmail = (searchEmail) => users.find((obj) => obj.email === search
 
 export const signup = (data) => {
     if (getUserByEmail(data.email)) throw new Error('email_existent')
-    
+
     users.push(data)
-    return generateAccessToken({email: data.email})
+    return generateAccessToken({ email: data.email })
 }
 
 export const login = (data) => {
