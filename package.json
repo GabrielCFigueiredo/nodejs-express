@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch" 
+    "dev": "webpack --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "nodemon-webpack-plugin": "^4.7.0",
